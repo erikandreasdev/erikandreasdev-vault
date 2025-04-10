@@ -1,6 +1,6 @@
 # Table of Contents
 
-- [rust](#rustup)
+- [rustup](#rustup)
 - [rustc](#rustc)
 - [cargo](#cargo)
 
