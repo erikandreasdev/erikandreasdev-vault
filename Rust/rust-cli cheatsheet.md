@@ -4,7 +4,7 @@
 - [rustc](#rustc)
 - [cargo](#cargo)
 
-```bash
+```
 rustup 1.28.1 (f9edccde0 2025-03-05)
 
 The Rust toolchain installer
@@ -53,7 +53,7 @@ Discussion:
 
 ## rustc
 
-```bash
+```
 Usage: rustc [OPTIONS] INPUT
 
 Options:
@@ -118,7 +118,7 @@ Additional help:
 
 ## cargo
 
-```bash
+```
 Rust's package manager
 
 Usage: cargo [+toolchain] [OPTIONS] [COMMAND]
