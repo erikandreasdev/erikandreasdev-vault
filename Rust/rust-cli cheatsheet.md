@@ -1,7 +1,11 @@
-# Rust Core CLI Commands
+# 🦀 Rust Core CLI Commands
 
-## Table of Contents
-- [Rust Core CLI Commands](#rust-core-cli-commands)
+A quick reference for essential Rust command-line tools and usage.
+
+---
+
+## 📑 Table of Contents
+- [Rust Core CLI Commands](#-rust-core-cli-commands)
 - [Check Rust version](#check-rust-version)
 - [Update Rust](#update-rust)
 - [Uninstall Rust](#uninstall-rust)
@@ -15,80 +19,94 @@
 
 ---
 
-Core command-line tools that come with a Rust installation.
+## 🔧 CLI Tools
 
-- `rustc` – The Rust compiler, used to compile Rust source files.
-- `cargo` – The official Rust package manager and build system.
-- `rustup` – Manages Rust versions and associated tools.
-- `rustdoc` – Generates documentation from Rust code.
-- `rustfmt` – Automatically formats Rust code.
-- `clippy` – Provides lints to catch common mistakes and improve code quality.
+These tools come with a standard Rust installation:
+
+- `rustc` – The Rust compiler
+- `cargo` – Package manager and build system
+- `rustup` – Toolchain/version manager
+- `rustdoc` – Documentation generator
+- `rustfmt` – Code formatter
+- `clippy` – Linter for code quality
 
 ---
 
-### Check Rust version
+## 📌 Check Rust version
 ```bash
 rustc --version
 ```
-Shows the currently installed Rust compiler version.
+Displays the installed Rust compiler version.
 
-### Update Rust
+---
+
+## 🔄 Update Rust
 ```bash
 rustup update
 ```
-Updates Rust and all installed components to the latest stable versions.
+Updates Rust and all installed components.
 
-### Uninstall Rust
+---
+
+## ❌ Uninstall Rust
 ```bash
 rustup self uninstall
 ```
-Removes Rust and all associated tools from your system.
+Completely removes Rust from your system.
 
 ---
 
-### Compile a Rust file
+## ⚙️ Compile a Rust file
 ```bash
 rustc main.rs
 ```
-Compiles a single Rust source file (`main.rs`) into a binary.
+Compiles `main.rs` into an executable.
 
-### Execute the compiled file
+---
+
+## ▶️ Execute the compiled file
 ```bash
 ./main
 ```
-Runs the compiled binary output by `rustc`.
+Runs the compiled binary.
 
 ---
 
-### Create a new project with Cargo
+## 📁 Create a new project with Cargo
 ```bash
 cargo new project_name
 ```
-Creates a new Rust project directory with the necessary files, including `Cargo.toml` and `src/main.rs`.
+Generates a new project structure with:
+- `Cargo.toml`
+- `src/main.rs`
 
 ---
 
-### Build a project
+## 🏗️ Build a project
 ```bash
 cargo build
 ```
-Compiles the entire Cargo project and outputs a binary in the `target` directory.
-
-### Run a project
-```bash
-cargo run
-```
-Builds and immediately runs the Rust project.
-
-### Check a project (analyze without building)
-```bash
-cargo check
-```
-Quickly analyzes the project for errors without producing a binary—useful for fast feedback during development.
+Compiles the project and outputs a binary in the `target/` directory.
 
 ---
 
-### Example `Cargo.toml`
+## 🚀 Run a project
+```bash
+cargo run
+```
+Builds and immediately runs the project.
+
+---
+
+## 🔍 Check a project (analyze without building)
+```bash
+cargo check
+```
+Performs analysis for errors without building the binary (fast feedback during dev).
+
+---
+
+## 📄 Example `Cargo.toml`
 ```toml
 [package]
 name = "project_name"
@@ -98,11 +116,11 @@ edition = "2021"
 [dependencies]
 ```
 
-#### Explanation
-- `[package]`: Contains metadata about the project.
-  - `name`: The name of the package.
-  - `version`: The current version.
-  - `edition`: Specifies the Rust edition (like a language version).
-- `[dependencies]`: Where you list external crates (libraries) your project uses.
+### 🔍 Explanation
+- `[package]`: Project metadata
+  - `name`: Project name
+  - `version`: Current version
+  - `edition`: Rust edition (e.g., 2021)
+- `[dependencies]`: External libraries used in the project
 
-For more about the TOML format, see the [official TOML documentation](https://toml.io/en/).
+📚 Learn more about the TOML format: [TOML Documentation](https://toml.io/en/)
